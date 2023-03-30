@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    --keycap-font-size: 19px;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: #1e1e1e;
+    overflow-x: hidden;
+}
+
+.app {
+    padding: 1em ;
+    border-radius: 35px;
+    width: 300px;
+    background-color: #23242A;
+    font-family: 'Montserrat', sans-serif;
+    color:#DEE1EF;
+}
+.header {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+}
+
+.user-input {
+    display: flex;
+    font-size: 0.8rem;
+    margin: 1.3em auto;
+    background-color: #3D3F4A;
+    padding: 0.6em;
+    border-radius: 10px;
+}
+
+.user-input span {
+    display: flex;
+    align-items: center;
+}
+
+.math-field {
+    font-size: 1.4rem;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-primary {
+    background-color: #8ab4f8;
+    color: #23242A;
+    padding: 0.6em;
+    border: none;
+    border-radius: 10px;
+}
+
+.answer-area {
+    margin: 1em auto;
+    font-size: 1rem;
+}
+
+.derivative__answer {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 3rem;
+    overflow-x: auto;
+}
+
+/*css for the scrollbar */
+.derivative__answer::-webkit-scrollbar {
+    height: 2px;
+    width: 2px;
+}
+.derivative__answer::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+.derivative__answer::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+@media (pointer: coarse) {
+    math-field::part(virtual-keyboard-toggle) {
+        display: none;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+math-field {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    width: 195px;
+    overflow: scroll;
+}
+
+.header__title {
+    color: #DEE1EF;
+    opacity: 60%;
+}
+
+/*  Utility */
+.flex-box {
+    display: flex;
+}
+.container {
+    margin: 1em auto;
+    padding: 0.2em;
+}
